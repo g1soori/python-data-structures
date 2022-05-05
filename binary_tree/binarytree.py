@@ -67,6 +67,28 @@ class BinaryTree():
             if current_node.right is not None:
                 queue.append(current_node.right)
         return result 
+    
+    def dfs_pre_order(self):
+        result = []
+        def traverse(current_node):
+            result.append(current_node.value)
+            if current_node.left is not None:
+                traverse(current_node.left)
+            if current_node.right is not None:
+                traverse(current_node.right)
+        traverse(self.root)
+        return(result)
+
+    def dfs_post_order(self):
+        results = []
+
+        def traverse(current_node):
+            if current_node.left is not None:
+                traverse(current_node.left)
+            if current_node.right is not None:
+                traverse(current_node.right)
+            results.append(current_node)
+        return results
 
 my_bt = BinaryTree()
 my_bt.insert(6)
@@ -77,4 +99,4 @@ my_bt.insert(7)
 my_bt.insert(8)
 my_bt.insert(9)
 
-print(my_bt.bfs())
+print(my_bt.dfs_post_order())
