@@ -1,6 +1,4 @@
 
-from matplotlib.pyplot import get
-
 
 class Node:
     def __init__(self,value) -> None:

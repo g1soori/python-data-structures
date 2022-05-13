@@ -2,7 +2,7 @@ BigO
 - Use for comparing two codes
 - Time complexity
 - Space complexity. Ex- lesser memory
-- Omegam beta and omicron
+- Omega beta and omicron
 -  O(n) O(n2) O(1) O(log n)
 - o(1) most efficient while o(n2) least efficient
 - o(n2) - loop within a loop
@@ -25,7 +25,16 @@ Data Structures
 - linked lists doesn't have indexes
 - They are not contiguously stored in memory compared to lists
 
-4. Graphs
+2. Doubly linked Lists
+
+3. Stacks and Queues
+
+4. Trees
+- Binary search trees considered O(log n) with perfect or complete trees but O(n) in worst case (= linked list)
+
+5. Hash Trees
+
+6. Graphs
 - Graphs can be represented as adjacency matrix or adjacency list
 - Adjacency list is less space complexity compared to matrix
 - Adjacency list prefered over matrix
